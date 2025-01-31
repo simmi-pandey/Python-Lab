@@ -1,0 +1,77 @@
+#Print "Hello,World!"
+print("Hello World!!!")
+
+#Calculate the sum of two numbers
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+print("sum:" , num1 + num2)
+
+#Find the square of a number.
+num = int(input("Enter a number:"))
+print("Square:", num ** 2)
+
+#Accept the user's name and greet them with it.
+name= input("please enter your name:")
+print("Hello, "+name + "!")
+
+#Check whether a number is even or odd.
+num = int(input("Enter a number:"))
+if num % 2 == 0:
+     print(num,"is even")
+else:
+     print(num, "is odd")
+
+#Write a Python program that takes a list and returns a new list with unique elements of the first list.
+input_list = [1,2,3,4,5,6,7,8]
+new_list = list(set(input_list))
+print(new_list)
+
+#Convert celsius to Fahrenheit.
+ef celsius_to_fahrenheit(celsius):
+   return(celsius * 9/5)+32
+celsius = float(input("Enter temperature in celsius"))
+print(celsius,"celsius is", celsius_to_fahrenheit(celsius), "Fahrenheit.")
+
+#Calculate the area of a circle.
+import math
+radius = float(input("Enter radius:"))
+print(math.pi * radius ** 2)
+
+#Reverse a given string.
+s = input("Enter a string:")
+print(s[::-1])
+
+#Check if a number is a prime number.
+num = int(input("Enter a number:"))
+if num > 1:
+    for i in range (2, num):
+        if num % i == 0:
+            print("Not Prime")
+            break
+        else:
+            print("Prime")
+else:
+            print("Not Prime")
+
+#Calculate the factorial of a number.
+import math
+num = int(input("Enter a number:"))
+print(math.factorial(num))
+
+#Find the largest item from a given list.
+lst = [12, 45, 7, 23, 56, 89, 34]
+print(max(lst))
+
+#Write a python program to check whether a number is in a given range.
+num = int(input("Enter a number:"))
+lower = int(input("Enter lower bound:"))
+upper = int(input("Enter upper bound:"))
+if lower <= num <= upper:
+    print("In range")
+else:
+    print("Not in range")
+
+#Calculate the number of upper case letters and lower case letters in a string.
+s = input("Enter a string:")
+print("Upper case:", sum(1 for c in s if c.isupper()))
+print("Lower case:", sum(1 for c in s if c.islower()))
