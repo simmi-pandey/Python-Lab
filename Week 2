@@ -1,0 +1,51 @@
+15.Write a python function to multiply all the numbers in a list.
+
+def multiply_numbers(lst):
+    product = 1
+    for num in lst:
+        product *= num
+        return product
+    numbers =[1,2,3,4,5]
+    print(multiply_numbers(numbers))
+
+16.Check if a number is a perfect.
+
+def is_perfect(n):
+    sum = 0
+    for i in range(1,n):
+        if n % i ==0:
+            sum +=i
+            return sum == n
+        print(is_perfect(6))
+        print(is_perfect(28))
+
+17.Create a function that checks if  a passed string is a palindrome or not.
+
+def is_palindrome(s):
+    return s == s[::-1]
+print(is_palindrome("radar"))
+print(is_palindrome("hello"))
+
+18.Write a python program to check if a passed string is a pangram or not.
+
+def is_pangram(s):
+    alphabet = "abcdefghighijklmnopqrstuvwxyz"
+    for char in alphabet:
+        if char not in s.lower():
+            return False
+    return True
+print(is_pangram("The quick brown fox jumps over the lazy dog"))
+
+19.Caculate the sum of the digits of a numbers.
+
+def sum_of_digits(n):
+    return sum(int(digit) for digit in str(n))
+print(sum_of_digits(12345))
+
+20.Generate a list of four random numbers.
+
+import random
+
+def generate_random_numbers():
+    return [random.randint(1,100) for _ in range(4)]
+print(generate_random_numbers())
