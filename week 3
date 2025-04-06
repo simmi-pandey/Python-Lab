@@ -1,0 +1,68 @@
+1)Write a program for checking the given number is even or odd.
+
+number = int(input("Enter a number:"))
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+
+2) using a for loop, write a program that prints the decimal equivalent to 1/2, 1/3, 1/4,........1/10
+
+for i in range(2, 11):
+    print(f"1/{i} = {1/i: .4f}")
+
+3) Write a program for displaying reversal of a number.
+
+number = int(input("Enter the  number:"))
+print(int(str(number)[::-1]))
+
+4) Write a program for finding biggest number among 3 numbers.
+
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter second number:"))
+num3 = int(input("Enter third number:"))
+
+largest = max(num1, num2, num3)
+
+print(f"The largest number is: {largest}")
+
+5) Write  a program using a while loop that asks the user for a number, and prints a countdown from that number to zero. Exercise programs on operators & I/O operations.
+
+number = int(input("Enter a number:"))
+while number >= 0:
+    print(number)
+    number -= 1
+
+6) Write a program that takes 2 numbers as command line arguments and prints its sum.
+
+a = 10
+b = 3
+
+print(f"Addition:{a+b}")
+print(f"Subtraction:{a-b}")
+print(f"multiplication:{a*b}")
+print(f"Division:{a/b}")
+print(f"Modulus:{a%b}")
+
+7) Implement python script to show the usage of various operators available in python language.
+
+age = int(input("Enter your age:"))
+if age >= 18:
+ print("You are eligible to vote.")
+else:
+ print("You are not eligible to vote.")
+
+8) Implement python script to check the given year is leap year or not.
+
+def is_leap_year(year):
+    if(year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+    
+year = int(input("Enter a year:"))
+
+if is_leap_year(year):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
